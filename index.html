@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Google Fonts for a more modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Adding FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Decentralized Voting System</h1>
+        <p>Secure, transparent, and easy voting powered by blockchain</p>
+    </header>
+
+    <main>
+        <div id="vote-section">
+            <div id="vote-buttons">
+                <button class="vote-button" onclick="vote(0)">
+                    <i class="fas fa-thumbs-up"></i> Vote for Candidate 1
+                </button>
+                <button class="vote-button" onclick="vote(1)">
+                    <i class="fas fa-thumbs-up"></i> Vote for Candidate 2
+                </button>
+            </div>
+            <div id="vote-result" class="hidden">
+                <p>Your vote has been cast!</p>
+            </div>
+        </div>
+
+        <div id="result">
+            <h2>Current Vote Tally</h2>
+            <div id="candidates">
+                <div class="candidate">
+                    <h3>Candidate 1</h3>
+                    <p id="votes-candidate-1">Votes: 0</p>
+                </div>
+                <div class="candidate">
+                    <h3>Candidate 2</h3>
+                    <p id="votes-candidate-2">Votes: 0</p>
+                </div>
+            </div>
+            <div id="vote-history">
+                <h3>Voting History:</h3>
+                <ul id="history-list">
+                    <!-- Voting history will appear here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by Blockchain | Made with ❤️ by YourTeam</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
